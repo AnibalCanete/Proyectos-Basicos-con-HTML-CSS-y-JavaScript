@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="menu">
+        <!-- Container -->
+        <section class="menu-container">
+            <!-- Logo -->
+            <h1 class="menu-logo">Anibal Cañete.</h1>
+            <!-- Main -->
+            <ul class="menu-links">
+                <!-- Single Item -->
+                <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                <!-- Item With a Drop-Down Menu -->
+                <li class="menu-item menu-item-show">
+                    <a href="#" class="menu-link">About <img src="assets/images/arrow.svg" alt="Arrow" class="menu-arrow"></a>
+                    <!-- List of Options -->
+                    <ul class="menu-nesting">
+                        <li class="menu-inside"><a href="#" class="menu-link menu-link-inside">About 1</a></li>
+                        <li class="menu-inside"><a href="#" class="menu-link menu-link-inside">About 2</a></li>
+                        <li class="menu-inside"><a href="#" class="menu-link menu-link-inside">About 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-show">
+                    <a href="#" class="menu-link">Projects <img src="assets/images/arrow.svg" alt="Arrow" class="menu-arrow"></a>
+                    <ul class="menu-nesting">
+                        <li class="menu-inside"><a href="#" class="menu-link menu-link-inside">Proyects 1</a></li>
+                        <li class="menu-inside"><a href="#" class="menu-link menu-link-inside">Proyects 2</a></li>
+                        <li class="menu-inside"><a href="#" class="menu-link menu-link-inside">Proyects 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+            </ul>
+            <!-- Hamburger Menu Dropdown -->
+            <div class="menu-hamburger">
+                <img src="assets/images/menu.svg" alt="Menu" class="menu-img">
+            </div>
+        </section>
+    </nav>
+    <!-- JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
