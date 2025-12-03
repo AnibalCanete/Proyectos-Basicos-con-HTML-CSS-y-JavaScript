@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu Desplegable</title>
+        <!-- Estilos - Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <!-- Navegación - Nav -->
+        <nav class="menu">
+            <!-- Contenedor del Menu - Menu Container -->
+            <section class="menu-contenedor">
+                <!-- Logo -->
+                <h1 class="menu-logo">Anibal Cañete.</h1>
+                <!-- Menu Principal - Main Menu -->
+                <ul class="menu-enlaces">
+                    <!-- Item Unico - Single Item -->
+                    <li class="menu-item"><a href="#" class="menu-enlace">Inicio</a></li>
+                    <!-- Item con un Menu Desplegable - Item With a Drop-Down Menu -->
+                    <li class="menu-item menu-item-mostrar">
+                        <a href="#" class="menu-enlace">Acerca De <img src="assets/images/arrow.svg" alt="Flecha" class="menu-flecha"></a>
+                        <!-- Lista con las Opciones - List of Options -->
+                        <ul class="menu-anidado">
+                            <li class="menu-interior"><a href="#" class="menu-enlace menu-enlace-interior">Acerca De 1</a></li>
+                            <li class="menu-interior"><a href="#" class="menu-enlace menu-enlace-interior">Acerca De 2</a></li>
+                            <li class="menu-interior"><a href="#" class="menu-enlace menu-enlace-interior">Acerca De 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-mostrar">
+                        <a href="#" class="menu-enlace">Projectos <img src="assets/images/arrow.svg" alt="Flecha" class="menu-flecha"></a>
+                        <ul class="menu-anidado">
+                            <li class="menu-interior"><a href="#" class="menu-enlace menu-enlace-interior">Proyecto 1</a></li>
+                            <li class="menu-interior"><a href="#" class="menu-enlace menu-enlace-interior">Proyecto 2</a></li>
+                            <li class="menu-interior"><a href="#" class="menu-enlace menu-enlace-interior">Proyecto 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#" class="menu-enlace">Contacto</a></li>
+                </ul>
+                <!-- Desplegable Menu de Hamburguesa - Hamburger Menu Dropdown -->
+                <div class="menu-hamburguesa">
+                    <img src="assets/images/menu.svg" alt="Menu" class="menu-img">
+                </div>
+            </section>
+        </nav>
+
+        <!-- JavaScript -->
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
