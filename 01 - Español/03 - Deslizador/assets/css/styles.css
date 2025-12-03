@@ -1,0 +1,128 @@
+
+/* Fuentes - Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+
+/* Estilos Globales - Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+/* Slider - Deslizador */
+
+.contenedor {
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.deslizador {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+}
+
+.deslizador-contenedor {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+}
+
+.deslizador-cuerpo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: #f2f2f2;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.deslizador-cuerpo-mostrar {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.deslizador-textos {
+    max-width: 600px;
+}
+
+.subtitulo {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.deslizador-resena {
+    font-weight: 300;
+    font-size: 20px;   
+    line-height: 1.7;
+}
+
+.deslizador-img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.deslizador-flecha {
+    cursor: pointer;
+    width: 90%;
+}
+
+.deslizador-flecha:nth-of-type(2) {
+    justify-self: end;
+}
+
+@media (max-width: 768px) {
+    .deslizador-cuerpo {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 1em;
+    }
+
+    .deslizador-imagen {
+        grid-row: 1/2;
+    }
+
+    .deslizador-img {
+        width: 210px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 425px) {
+    .deslizador-contenedor {
+        grid-template-columns: 25px 1fr 25px;
+    }
+
+    .deslizador-flecha {
+        width: 100%;
+    }
+
+    .deslizador-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .subtitulo {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .deslizador-resena {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
